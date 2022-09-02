@@ -1,0 +1,693 @@
+:root{
+    --onecolor: #ff274b;
+    --towcolor: #f7bcf7;
+    --thcolor: #ffffff;
+    --focolor: #c9caca;
+    --backcolor: #171a1c;
+    --backcolor2: #22282a;
+    --pading: 8%;
+}
+::selection{
+    background-color: var(--onecolor);
+    color: var(--thcolor);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: var(--thcolor);
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--backcolor);
+    display: flex;
+    flex-direction: column;
+}
+.home nav h2{
+    font-size: 1.9rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+    text-transform:capitalize ;
+}
+.home nav{
+    padding-top: 2.5rem;
+    padding-left: var(--pading);
+    padding-right: var(--pading);
+    display: flex;
+    justify-content: space-between;
+
+}
+.home nav h2 span{
+    color: var(--onecolor);
+}
+.home ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+}
+.home ul li a{
+    color: var(--thcolor);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+.home ul li a:hover{
+    color: var(--onecolor);
+}
+.home nav .call{
+    background-color: var(--onecolor);
+    color: var(--thcolor);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
+    transition: 0.5s;
+    border: 2px solid transparent;
+}
+.home nav .call:hover{
+    background-color: transparent;
+    border: 2px solid var(--onecolor);
+}
+.home .content{
+    flex-grow: 1;
+    padding: var(--pading);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home .content .text{
+    position: relative;
+    bottom: 50px;
+}
+.home .content .text h1{
+    font-size: 3.1rem;
+    margin: 1.7rem 0;
+    text-transform: capitalize;
+}
+.home .content .text h1 span{
+    color: var(--onecolor);
+}
+.home .content .text h3{
+    font-size: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+.home .content .text h3 span{
+    color: var(--onecolor);
+}
+.home .content .text h4{
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    color: var(--towcolor);
+}
+.home .content .text .call{
+    background-color: var(--onecolor);
+    color: var(--thcolor);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
+    transition: 0.5s;
+    border: 2px solid transparent;
+}
+.home .content .text .call:hover{
+    background-color: transparent;
+    border: 2px solid var(--onecolor);
+}
+.home .content .text .social{
+    margin-top: 2.9rem;
+}
+.home .content .text .social  a{
+    text-decoration: none;
+}
+.home .content .text .social img{
+    width: 2.5rem;
+    margin-right: 1.5rem;
+    transition: 0.5s;
+}
+.home .text .social img:hover{
+    transform: rotate(15deg) scale(1.2);
+}
+.home .content .imges{
+    width: 45%;
+    height: 90%;
+    position: relative;
+}
+.home .content .imges .ig{
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    transition:  0.6s;
+}
+.home .content .imges:hover .ig{
+    bottom: 30px;
+}
+
+.home .content .imges .my{
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    transition:  0.6s;
+}
+.home .content .imges:hover .my{
+    left:  46%;
+}
+/* end home */
+/* start about */
+.about{
+    background-color: var(--backcolor2);
+    padding: 2rem var(--pading);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: var(--pading);
+    padding-bottom: var(--pading);
+}
+.about .image{
+    width: 35%;
+}
+.about .image img{
+    width: 60%;
+    transition: 0.4s;
+}
+.about .image img:hover{
+    transform: rotate(8deg) scale(1.2);
+}
+.about .text{
+    width: 40%;
+}
+.about .text h1{
+    font-size: 3.1rem;
+    margin: 1.7rem 0;
+    text-transform: capitalize;
+}
+.about .text h1 span{
+    color: var(--onecolor);
+}
+.about .text h5{
+    font-size: 1.37rem;
+    margin-bottom: 1.5rem;
+
+}
+.about .text h5 span{
+    color: var(--onecolor);
+}
+.about .text P{
+     color: var(--focolor);
+    letter-spacing: 1PX;
+    line-height: 1.8rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    
+}
+/* start service */
+.service{
+    background-color: var(--backcolor);
+    padding: var(--pading);
+}
+.service h2{
+    font-size: 3.6rem;
+    margin: 1.8rem 0 3rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+.service h2 span{
+    color: var(--onecolor);
+}
+.service .conter{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+
+}
+.service .conter .box{
+    background-color: var(--backcolor2);
+    width: 300px;
+    border-radius: 20px;
+    padding: 1.3rem 2rem;
+    text-align: center;
+    box-shadow: 1px 6px 11px 1px var(--focolor);
+    transition: 0.4s;
+}
+.service .conter .box:hover{
+    transform: scale(1.1);
+}
+.service .conter .box i{
+    font-size: 3.12rem;
+    color: var(--onecolor);
+    margin: 2rem;
+}
+.service .conter .box h3{
+    font-size: 1.6rem;
+    margin-bottom: 1.3rem;
+}
+.service .conter .box p{
+    font-size: 1.2rem;
+    color: var(--focolor);
+    letter-spacing: 1px;
+    line-height: 1.9rem;
+    
+}
+/* end service */
+/* start skills */
+.skills{
+    padding: var(--pading);
+    background-color: var(--backcolor2);
+}
+.skills h1{
+    font-size: 3.6rem;
+    margin: 1.8rem 0 3rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+.skills h1 span{
+    color: var(--onecolor);
+}
+/* .skills .conter{
+    margin: 0 auto;
+    
+} */
+
+.skills .conter .box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid var(--onecolor);
+}
+.skills .conter .box:hover p{
+    transform: scale(1.1);
+}
+.skills .conter .box:hover img{
+    transform: rotate(6deg);
+}
+.skills .conter .box .imags{
+    width: 35%;
+}
+.skills .conter .box .imags img{
+    width: 90%;
+    transition: 0.6s;
+}
+.skills .conter .box .text{
+    width: 35%;
+}
+.skills .conter .box .text p{
+    color: var(--focolor);
+    letter-spacing: 1PX;
+    line-height: 1.9rem;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+.skills .conter .box .text p span{
+    color: var(--onecolor);
+}
+
+/* end skills */
+/* start projects */
+.projects{
+    padding: var(--pading);
+    background-color: var(--backcolor);
+}
+.projects h1{
+    font-size: 3.6rem;
+    margin: 1.8rem 0 3rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+.projects h1 span{
+    color: var(--onecolor);
+}
+.projects .contaner{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 40px;
+}
+.projects .contaner .box{
+    background-color: #2e3435;
+    border-radius: 20px;
+    transition: 0.5s;
+    border-bottom: 3px solid transparent;
+}
+.projects .contaner .box:hover{
+    background-color: #3d4042;
+    border-bottom: 3px solid var(--onecolor);
+}
+.projects .contaner .box img{
+    max-width: 100%;
+    border-radius: 20px;
+}
+.projects .contaner .box .text{
+    padding: 1.9rem;
+    margin-top: 1.3rem;
+
+}
+.projects .contaner .box .text .tex{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 1.6rem;
+    text-transform: uppercase;
+}
+.projects .contaner .box .text .tex a{
+    text-decoration: none;
+    color: var(--onecolor);
+
+}
+.projects .contaner .box .text p{
+    color: var(--focolor);
+    line-height: 2rem;
+    font-size: 1.3rem;
+}
+/* end projects */
+/* start contaact */
+.contact{
+    background-color: var(--backcolor2);
+    padding: var(--pading);
+
+}
+.contact h1{
+    font-size: 3.6rem;
+    margin: 1.8rem 0 3rem;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+.contact h1 span{
+    color: var(--onecolor);
+}
+.contact .conter{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.contact .conter .box{
+    display: flex;
+    width: 350px;
+    margin: 30px;
+    padding: 30px 20px;
+    background-color: var(--backcolor);
+    border-radius: 20px;
+    box-shadow: 1px 5px 12px -2px #f7bcf7;
+    border-top: 2px solid var(--onecolor);
+    transition: 0.5s;
+}
+.contact .conter .box:hover{
+    transform: scale(1.1);
+}
+.contact .conter .box i{
+    color: var(--onecolor);
+    font-size: 2.1rem;
+    margin-right: 1.3rem;
+}
+.contact .conter .box .text h3{
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+}
+.contact .conter .box .text p{
+    font-size: 1.1rem;
+    color: #c9caca;
+}
+/* end contaact */
+/* start footer */
+.footer{
+    background-image: url(../image/stats.png);
+    position: relative;
+    background-size: cover;
+    padding: 100px 50px 30px;
+
+}
+.footer::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0 / 70%);
+}
+.footer .contner{
+    position: relative;
+    text-align: center  ;
+}
+.footer .contner .pfoot{
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+.footer .contner a{
+    color: var(--onecolor);
+    font-size: 40px;
+    margin-bottom: 30px;
+
+}
+.footer .contner .icons i{
+    color: #c9caca;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    transition: 0.5s;
+}
+.footer .contner .icons i:hover{
+    color: var(--onecolor);
+    transform: scale(1.2);
+}
+.footer .contner .pend{
+    padding: 30px;
+    font-size: 20px;
+}
+.footer .contner .pend span{
+    color: var(--onecolor);
+}
+/* end footer */
+/* ---------------------------------------
+--------------------(media 576px)---------
+------------------------------------------ */
+@media screen and (max-width:575px){
+    :root{
+        --padding: 1.5rem
+    }
+    html{
+        font-size: 13px;
+    }
+    .home .content .imges .ig,
+    .home .content .imges .my,
+    .skills .conter .box .imags,
+    .home ul li,
+    .home nav .call {
+        display: none;
+    }
+    .home nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 30px;
+        z-index: 222;
+        background-color: var(--backcolor);
+        border-bottom: 1px solid var(--focolor);
+    }
+     .home .content .imges{
+        width: 9%;
+        height: 60%;
+        position: relative;
+     } 
+    .home .content .text{
+        position: relative;
+        bottom: -40px;
+        z-index: 11;
+    }
+    .about{
+        background-color: var(--backcolor2);
+        padding: 2rem var(--pading);
+        padding-top: var(--pading);
+        padding-bottom: var(--pading);
+        text-align: center;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .about .image {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    .about .image img {
+        width: 45%;
+        transition: 0.4s;
+    }
+    .about .text {
+        width: 100%;
+    }
+    .service .conter{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+
+    }
+    .service .conter .box {
+        background-color: var(--backcolor2);
+        width: 350px;
+        border-radius: 20px;
+        padding: 1.3rem 2rem;
+        text-align: center;
+        box-shadow: 1px 6px 11px 1px var(--focolor);
+        transition: 0.4s;
+    }
+    .skills .conter .box {
+        margin-bottom: 50px;
+        width: 400px;
+        padding: 10px;
+    }
+    .skills .conter .box .text{
+        width: 80%;
+    }
+
+    .footer .contner a {
+        font-size: 30px;
+    }
+}
+/* ----------------------------------------
+---------------------media 767px-----------
+------------------------------------------- */
+@media screen and (min-width:576px) and (max-width:767px){
+    :root{
+        --padding: 1.5rem
+    }
+    html{
+        font-size: 13px;
+    }
+    .home nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 30px;
+        z-index: 222;
+        background-color: var(--backcolor);
+        border-bottom: 1px solid var(--focolor);
+    }
+    .home .content .imges .ig,
+    .home ul li{
+        display: none;
+    }
+    .home .content .text{
+        bottom: 0;
+    }
+    .about{
+        background-color: var(--backcolor2);
+        padding: 2rem var(--pading);
+        padding-top: var(--pading);
+        padding-bottom: var(--pading);
+        text-align: center;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .about .image {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    .about .image img {
+        width: 45%;
+        transition: 0.4s;
+    }
+    .about .text {
+        width: 100%;
+    }
+    .service .conter{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 50px;
+        margin: 30px auto;
+        justify-content: center;
+    }
+    .service .conter .box {
+        background-color: var(--backcolor2);
+        width: 350px;
+        border-radius: 20px;
+        padding: 1.3rem 2rem;
+        text-align: center;
+        box-shadow: 1px 6px 11px 1px var(--focolor);
+        transition: 0.4s;
+    }
+    .skills .conter .box {
+        margin-bottom: 50px;
+        width: 400px;
+        padding: 10px;
+    }
+    .skills .conter .box .text{
+        width: 80%;
+    }
+    .skills .conter .box .imags {
+        display: none;
+    }
+    .footer .contner a {
+        font-size: 35px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    :root{
+        --padding: 1.5rem
+    }
+    html{
+        font-size: 13px;
+    }
+    .home nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 30px;
+        z-index: 222;
+        background-color: var(--backcolor);
+        border-bottom: 1px solid var(--focolor);
+    }
+    .home .content .imges .ig,
+    .home ul li{
+        display: none;
+    }
+    .home .content .text{
+        bottom: 0;
+    }
+    
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+    :root{
+        --padding: 1.5rem
+    }
+    html{
+        font-size: 13px;
+    }
+    .home nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 30px;
+        z-index: 222;
+        background-color: var(--backcolor);
+        border-bottom: 1px solid var(--focolor);
+    }
+    
+    /* .home ul li */
+    .home .content .imges .ig{
+        
+        display: none;
+    }
+    .home .content .text{
+        bottom: 0;
+    }
+}
